@@ -20,7 +20,8 @@
 
 <div align="center">
 
-<strong>Lucas Paguetti Pereira</strong> 🧙‍♂️  
+<strong>Lucas Paguetti Pereira</strong>🦇
+
 🏫 <strong>Instituição</strong>: Cesar School 🎓🧡  
 📍 Recife, Pernambuco — <strong>Brazil</strong> 🇧🇷  
 
@@ -58,7 +59,7 @@ Repositorio-de-Estudos-em-C/
 ├── Avaliações/
 │   └── avaliações.c
 ├── readme.md
-└── LICENSE (MIT)
+└── license (MIT)
 </pre>
 
 <h2 align="center">🎯 Objetivo do Repositório:</h2>
