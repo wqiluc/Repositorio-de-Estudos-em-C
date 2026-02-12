@@ -50,7 +50,7 @@
 </h2>
 
 <pre>
-Estudos em C/
+Repositorio-de-Estudos-em-C/
 ├── img/
 │   └── C.jpeg
 ├── Estudos/
