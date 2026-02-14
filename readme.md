@@ -95,5 +95,5 @@ estruturas de dados e resolução eficiente de problemas computacionais 🔖⚙�
   <img src="https://img.shields.io/badge/🔍Manipulação_de_Memória-111827?style=for-the-badge&logo=code&logoColor=white" height="28"/>
   <br>
 <img src="https://img.shields.io/badge/Versionamento-Git-F05032?style=for-the-badge&logo=git&logoColor=orange&labelColor=black">
-<img src="https://img.shields.io/badge/Plataforma-GitHub-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=blac"/>
+<img src="https://img.shields.io/badge/Plataforma-GitHub-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=black"/>
 </p>
