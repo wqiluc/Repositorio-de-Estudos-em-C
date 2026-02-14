@@ -20,8 +20,7 @@
 
 <div align="center">
 
-<strong>Lucas Paguetti Pereira</strong>🦇
-
+<strong>Lucas Paguetti Pereira</strong>🦇<br>
 🏫 <strong>Instituição</strong>: Cesar School 🎓🧡  
 📍 Recife, Pernambuco — <strong>Brazil</strong> 🇧🇷  
 
@@ -52,15 +51,29 @@
 
 <pre>
 Repositorio-de-Estudos-em-C/
+├── .github<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg"
+     width="15"
+     style="vertical-align:middle; filter: invert(1);"/>/
+│   └── .workflows<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/githubactions/githubactions-original.svg" width="16" style="vertical-align:middle;"/>
+│&nbsp;&nbsp;&nbsp;├── _config.yml <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/yaml/yaml-original.svg" width="16" style="vertical-align:middle;"/>
+│   └── _config.yml<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/yaml/yaml-original.svg" width="18" style="vertical-align:middle;"/>
+│   └── estrutura_repositório.md<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/markdown/markdown-original.svg" width="18" style="vertical-align:middle;"/>
+│   └── estudos_objetivos.md<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/markdown/markdown-original.svg" width="18" style="vertical-align:middle;"/>
+├── .vscode<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="15" style="vertical-align:middle;"/>/
+│   └── tasks.json<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/json/json-original.svg" width="18" style="vertical-align:middle;"/>
 ├── img/
-│   └── C.jpeg
+│   └── C.jpeg<img src="https://cdn-icons-png.flaticon.com/512/136/136524.png" width="18"/>
 ├── Estudos/
-│   └── Cursos e Aulas Diversas (e seus exércicios).c
+│   └── Cursos e Aulas Diversas (e seus exércicios).c<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" width="18" style="vertical-align:middle;"/>
 ├── Avaliações/
-│   └── avaliações.c
-├── readme.md
-└── license (MIT)
+│   └── avaliações.c<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" width="18" style="vertical-align:middle;"/>
+├── readme.md<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/markdown/markdown-original.svg" width="18" style="vertical-align:middle;"/>
+└── license (MIT)<img src="https://img.shields.io/badge/Licença-MIT-111111?style=for-the-badge" width="90"/>
+</p>
 </pre>
+
+
+
 
 <h2 align="center">🎯 Objetivo do Repositório:</h2>
 
@@ -81,6 +94,6 @@ estruturas de dados e resolução eficiente de problemas computacionais 🔖⚙�
   <img src="https://img.shields.io/badge/🧭Ponteiros-FF4500?style=for-the-badge&logo=code&logoColor=white" height="28"/>
   <img src="https://img.shields.io/badge/🔍Manipulação_de_Memória-111827?style=for-the-badge&logo=code&logoColor=white" height="28"/>
   <br>
-  <img src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=black" height="28"/>
-  <img src="https://img.shields.io/badge/-GitHub-000000?style=flat-square&logo=github&logoColor=white" height="28"/>
+ <img src="https://img.shields.io/badge/Versionamento-Git-F05032?style=for-the-badge&logo=git&logoColor=white">
+  <img src="https://img.shields.io/badge/Plataforma-GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </p>
