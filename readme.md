@@ -57,8 +57,8 @@ Repositorio-de-Estudos-em-C/
 │   └── .workflows<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/githubactions/githubactions-original.svg" width="16" style="vertical-align:middle;"/>
 │&nbsp;&nbsp;&nbsp;├── _config.yml <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/yaml/yaml-original.svg" width="16" style="vertical-align:middle;"/>
 │   └── _config.yml<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/yaml/yaml-original.svg" width="18" style="vertical-align:middle;"/>
-│   └── estrutura_repositório.md<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/markdown/markdown-original.svg" width="18" style="vertical-align:middle;"/>
-│   └── estudos_objetivos.md<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/markdown/markdown-original.svg" width="18" style="vertical-align:middle;"/>
+│   └── estrutura_repositório.md<img src="https://img.shields.io/badge/Markdown-FFFFFF?style=for-the-badge&logo=markdown&logoColor=000000" height="15"/>
+│   └── estudos_objetivos.md<img src="https://img.shields.io/badge/Markdown-FFFFFF?style=for-the-badge&logo=markdown&logoColor=000000" height="15"/>
 ├── .vscode<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="15" style="vertical-align:middle;"/>/
 │   └── tasks.json<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/json/json-original.svg" width="18" style="vertical-align:middle;"/>
 ├── img/
@@ -67,7 +67,7 @@ Repositorio-de-Estudos-em-C/
 │   └── Cursos e Aulas Diversas (e seus exércicios).c<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" width="18" style="vertical-align:middle;"/>
 ├── Avaliações/
 │   └── avaliações.c<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" width="18" style="vertical-align:middle;"/>
-├── readme.md<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/markdown/markdown-original.svg" width="18" style="vertical-align:middle;"/>
+├── readme.md<img src="https://img.shields.io/badge/Markdown-FFFFFF?style=for-the-badge&logo=markdown&logoColor=000000" height="15"/>
 └── license (MIT)<img src="https://img.shields.io/badge/Licença-MIT-111111?style=for-the-badge" width="90"/>
 </p>
 </pre>
@@ -94,6 +94,6 @@ estruturas de dados e resolução eficiente de problemas computacionais 🔖⚙�
   <img src="https://img.shields.io/badge/🧭Ponteiros-FF4500?style=for-the-badge&logo=code&logoColor=white" height="28"/>
   <img src="https://img.shields.io/badge/🔍Manipulação_de_Memória-111827?style=for-the-badge&logo=code&logoColor=white" height="28"/>
   <br>
- <img src="https://img.shields.io/badge/Versionamento-Git-F05032?style=for-the-badge&logo=git&logoColor=white">
-  <img src="https://img.shields.io/badge/Plataforma-GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/Versionamento-Git-F05032?style=for-the-badge&logo=git&logoColor=orange&labelColor=black">
+<img src="https://img.shields.io/badge/Plataforma-GitHub-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=blac"/>
 </p>
