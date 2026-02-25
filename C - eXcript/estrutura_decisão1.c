@@ -1,10 +1,13 @@
 /*
     TOMADA DE DECISÃO EM C — EXEMPLO PRÁTICO
-    Estruturas condicionais: if, else if, else
+    Estruturas condicionais: (if, else if, else)
+    else if = elif do Python
 */
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 
 int main() {
 
@@ -63,5 +66,17 @@ int main() {
         ? printf("Saque realizado\n") 
         : printf("Saldo insuficiente\n");
 
+
+       /* ================= Letra maíuscula ou não ================= */
+
+    char letramaiuscula;
+    printf("Digite uma letra em maíuscula: ");
+    scanf("%c",&letramaiuscula);
+
+    if (letramaiuscula>='a' && letramaiuscula<='z'){
+        printf("Segue a sua letra em maíuscula: >%c<", toupper(letramaiuscula));
+    } else {
+        printf("Voce digitou: >%c<", letramaiuscula);
+    }
     return 0;
 }

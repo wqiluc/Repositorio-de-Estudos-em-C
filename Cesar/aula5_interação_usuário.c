@@ -53,7 +53,7 @@ int main(){
     // =====================
     if(numero2 != 0){
         
-        divA = numero1 / numero2;
+        divA = (numero1 / numero2);
         printf("Resultado da divisão A (numero1/numero2): %d\n", divA);
 
         restdivA = numero1 % numero2;
@@ -64,8 +64,8 @@ int main(){
     }
 
     if(numero1 != 0){
-        divB = numero2 / numero1;
-        
+
+        divB = (numero2 / numero1);
         printf("Resultado da divisão B (numero2/numero1): %d\n", divB);
 
         restdivB = numero2 % numero1;
