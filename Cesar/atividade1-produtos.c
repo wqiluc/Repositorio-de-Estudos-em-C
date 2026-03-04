@@ -17,33 +17,35 @@ int main(){
     printf("\n Digite a quantidade do produto: ");
     scanf("%d", &quantidadeproduto);
 
-    printf("\n Digite o valor do produto: ");
-    scanf("%f", &valorproduto);
-
-    valorfinal = quantidadeproduto * valorproduto;
-
-    printf("\n O valor do produto sem o desconto e sem código é: R$%.2f\n", valorfinal);
-
-    if(codigoproduto>=1 && codigoproduto<=10){
-        valorfinal = valorfinal + 10;
-    } else if (codigoproduto>=11 && codigoproduto<=20){
-        valorfinal = valorfinal + 15;
-    } else if (codigoproduto>=21 && codigoproduto<=30){
-        valorfinal = valorfinal + 20;
-    } else if (codigoproduto>=31 && codigoproduto<=40){
-        valorfinal = valorfinal + 30;
+    while (quantidadeproduto <1){
+        printf("\n Quantidade do produto invalida! Digite uma quantidade maior que 0.");
+        printf("\n Digite a quantidade do produto: ");
+        scanf("%d", &quantidadeproduto);
     }
 
-    printf("\n O valor do produto sem o desconto e com o código é: R$%.2f\n", valorfinal);
+    if (codigoproduto >=1 && codigoproduto <=10){
+        valorproduto = 10.00;
+    } else if (codigoproduto >=11 && codigoproduto <=20){
+        valorproduto = 15.00;
+    } else if (codigoproduto >=21 && codigoproduto <=30){
+        valorproduto = 20.00;
+    } else {
+        valorproduto = 30.00;
+    }
 
-    if (valorfinal<=250){
-        valorfinal = (valorfinal)+(valorfinal*0.05);   
-    } else if(valorfinal>250 && valorfinal<=500){
-        valorfinal = (valorfinal)+(valorfinal*0.10);
-    } else if(valorfinal>500){
-        valorfinal = (valorfinal)+(valorfinal*0.15);
+    valorfinal = quantidadeproduto * valorproduto;
+    
+    if(valorfinal <=250){
+        valorfinal = valorfinal * 0.95; // Aplica desconto de 5%
+    }
+    else if (valorfinal >250 && valorfinal <=500){
+        valorfinal = valorfinal * 0.90; // Aplica desconto de 10%
+    }
+    else {
+        valorfinal = valorfinal * 0.85; // Aplica desconto de 15%
     }
 
     printf("\n O valor final do produto é: R$%.2f\n", valorfinal);
 
+    return 0;
 }
