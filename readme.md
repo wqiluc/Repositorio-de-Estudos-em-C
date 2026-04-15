@@ -5,7 +5,7 @@
 </h1>
 
 <p align="center">
-<img src="img/C.jpeg" alt="Logo C" width="640">
+<img src="img/C.jpeg" alt="Logo C" width="420">
 </p>
 
 <p align="center">
@@ -44,46 +44,21 @@
 
 </div>
 
+
 <h2 align="center">
   🏛️ Arquitetura do Repositório: <br>
   <img src="https://img.shields.io/badge/-Arquitetura-111827?style=flat-square&logo=instructure&logoColor=white"/>
 </h2>
-
 <pre>
 Repositorio-de-Estudos-em-C/
-├── .github<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg"
-     width="15"
-     style="vertical-align:middle; filter: invert(1);"/>/
-│   ├── .workflows<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/githubactions/githubactions-original.svg"
-     width="16"
-     style="vertical-align:middle;"/>/
-│   ├── _config.yml <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/yaml/yaml-original.svg"
-     width="16"
-     style="vertical-align:middle;"/>
-├── .vscode<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg"
-     width="15"
-     style="vertical-align:middle;"/>/
-│   └── tasks.json<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/json/json-original.svg"
-     width="18"
-     style="vertical-align:middle;"/>
-├── img/
-│   └── C.jpeg<img src="https://cdn-icons-png.flaticon.com/512/136/136524.png"
-     width="18"/>
-├── Estudos/
-│   └── Cursos e Aulas Diversas (e seus exercicios).c<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"
-     width="18"
-     style="vertical-align:middle;"/>
-├── Avaliacoes/
-│   └── avaliacoes.c<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"
-     width="18"
-     style="vertical-align:middle;"/>
-├── readme.md<img src="https://img.shields.io/badge/Markdown-FFFFFF?style=for-the-badge&logo=markdown&logoColor=000000"
-     height="15"/>
-├── license (MIT)<img src="https://img.shields.io/badge/Licença-MIT-111111?style=for-the-badge"
-     width="90"/>
-└── .gitignore<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
-     width="18"
-     style="vertical-align:middle;"/>
+├── .github <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" height="20"/>/
+├── .vscode <img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white" height="20"/>/
+├── img <img src="https://img.shields.io/badge/Imagens-E34F26?style=flat-square&logo=icloud&logoColor=white" height="20"/>/
+├── include <img src="https://img.shields.io/badge/C_Headers-blue?style=flat-square&logo=c&logoColor=white" height="20"/>/
+├── listas Rennan <img src="https://img.shields.io/badge/Exercícios-4CAF50?style=flat-square&logo=readme&logoColor=white" height="20"/>/
+├── .gitignore <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=black" height="20"/>
+├── license <img src="https://img.shields.io/badge/Licença-MIT-yellow?style=flat-square" height="20"/>
+└── README.md <img src="https://img.shields.io/badge/Markdown-000000?style=flat-square&logo=markdown&logoColor=white" height="20"/>
 </pre>
 
 <h2 align="center">🎯 Objetivo do Repositório:</h2>
