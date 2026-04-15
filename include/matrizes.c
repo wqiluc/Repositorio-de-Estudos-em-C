@@ -14,7 +14,7 @@ int main(void)
         {
             if(i == j)
             {
-                matriz[i][j] = 2;
+                matriz[i][i] = 2;
             }
             else
             {
