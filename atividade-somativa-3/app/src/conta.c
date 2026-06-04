@@ -9,8 +9,9 @@ void conta_cadastrar(void)
     printf("Posição no arquivo (0-based): ");
     scanf("%ld", &pos);
 
-    if (pos < 0) {
-        printf("Posição inválida. Use valores >= 0.\n");
+    if (pos < 0) 
+    {
+        printf("Posição inválida. Use valores >= 0. ❌\n");
         return;
     }
 
@@ -37,11 +38,11 @@ void conta_cadastrar(void)
         return;
     }
 
-    printf("Numero da conta: ");
+    printf("Número da conta: ");
     scanf("%d", &cliente.numero);
     if (cliente.numero == 0) 
     {
-        printf("Numero invalido (0 e reservado para posicao vazia).\n");
+        printf("Número inválido (0 é reservado para posição vazia). ❌\n");
         fclose(file);
         return;
     }
@@ -53,7 +54,7 @@ void conta_cadastrar(void)
 
     arquivo_escrever(file, pos, &cliente);
     fclose(file);
-    printf("Cliente cadastrado na posição %ld.\n", pos);
+    printf("Cliente cadastrado na posição %ld. ✅\n", pos);
 }
 
 void conta_consultar(void) 
@@ -112,7 +113,8 @@ void conta_atualizar_saldo(void)
     fclose(file);
 }
 
-void conta_encerrar(void) {
+void conta_encerrar(void) 
+{
     int numero;
     printf("Número da conta a encerrar: ");
     scanf("%d", &numero);
@@ -124,7 +126,8 @@ void conta_encerrar(void) {
     for (long i = 0; i < total; i++) 
     {
         arquivo_ler(file, i, &cliente);
-        if (cliente.numero == numero) {
+        if (cliente.numero == numero) 
+        {
             memset(&cliente, 0, sizeof(Cliente));
             arquivo_escrever(file, i, &cliente);
             fclose(file);
