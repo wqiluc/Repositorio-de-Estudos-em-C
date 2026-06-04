@@ -1,19 +1,20 @@
 <h1 align="center">🏦 Sistema de Manutenção de Contas Bancárias em C</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/License-MIT-FF8C00?style=for-the-badge&logo=opensource&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Made%20with-C-A8B9CC?style=for-the-badge&logo=c&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Compiled%20with-GCC-E0234E?style=for-the-badge&logo=gnu&logoColor=red"/> <br>
-  <img src="https://img.shields.io/badge/Standard-C11-85EA2D?style=for-the-badge&logo=c&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Arquivo-Binário-FF6C37?style=for-the-badge&logo=databricks&logoColor=FF6C37"/>
-  <img src="https://img.shields.io/badge/Status-Concluído-green?style=for-the-badge&logo=checkmarx&logoColor=green"/>
+  <img src="https://img.shields.io/badge/-C-111827?style=flat-square&logo=c&logoColor=A8B9CC"/>
+  <img src="https://img.shields.io/badge/C11-111827?style=flat-square&logo=c&logoColor=A8B9CC"/>
+  <img src="https://img.shields.io/badge/GCC-111827?style=flat-square&logo=gnu&logoColor=red"/>
+  <img src="https://img.shields.io/badge/Modularização-111827?style=flat-square&logo=databricks&logoColor=red"/>
+  <img src="https://img.shields.io/badge/Architecture-111827?style=flat-square&logo=instructure&logoColor=white"/>
+  <br>
+  <img src="https://img.shields.io/badge/-Git-111827?style=flat-square&logo=git&logoColor=F05032"/>
+  <img src="https://img.shields.io/badge/-GitHub-111827?style=flat-square&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub%20Desktop-111827?style=flat-square&logo=github&logoColor=purple"/>
 </p>
 
 > **Atividade Somativa (3) — 2026/06/02**
 
 Sistema de cadastro e gerenciamento de contas bancárias em C, usando **arquivo binário de registros de tamanho fixo** com acesso direto por posição via `fseek`, leitura/escrita via `fread`/`fwrite` e releitura via `rewind`.
-
----
 
 <h2 align="center">📋 Menu de Opções <br>
 <img src="https://img.shields.io/badge/Menu-111827?style=flat-square&logo=readme&logoColor=white"/></h2>
@@ -48,16 +49,14 @@ atividade-somativa-3/ <img src="https://img.shields.io/badge/C11-111827?style=fl
         └── arquivo.c <img src="https://img.shields.io/badge/I/O_Binário-4a1942?style=flat-square&logo=c&logoColor=A8B9CC" height="18"/> <img src="https://img.shields.io/badge/fopen%20|%20fseek%20|%20fread%20|%20fwrite%20|%20ftell-111827?style=flat-square" height="18"/>
 </pre>
 
-### 🔗 Diagrama de dependências
+<h3 align="center">🔗 Diagrama de dependências <br>
+<img src="https://img.shields.io/badge/Modularização-111827?style=flat-square&logo=databricks&logoColor=red"/></h3>
 
 <p align="center">
-
-  <!-- ── Dependências — style=flat-square + cores semânticas ── -->
   <img src="https://img.shields.io/badge/main.c-→_conta.h-0ea5e9?style=flat-square&logo=c&logoColor=white"/>
   <img src="https://img.shields.io/badge/main.c-→_arquivo.h-0ea5e9?style=flat-square&logo=c&logoColor=white"/>
   <img src="https://img.shields.io/badge/conta.h-→_arquivo.h-22c55e?style=flat-square&logo=c&logoColor=white"/>
   <img src="https://img.shields.io/badge/arquivo.h-→_conta.h_(struct)-f59e0b?style=flat-square&logo=c&logoColor=white"/>
-
 </p>
 
 ```
@@ -247,3 +246,12 @@ O arquivo `contas.bin` foi modificado por outra chamada `fopen/fclose` interna. 
   <tr><td align="center"><b>Opção 4 — recebe o número da conta a ser encerrada e zera o registro com <code>memset</code>, liberando a posição no arquivo para reutilização sem reduzir seu tamanho físico.</b></td></tr>
   <tr><td align="center"><img src="img/encerrar_conta.png" width="750" alt="Encerrar Conta"/></td></tr>
 </table>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/License-MIT-FF8C00?style=for-the-badge&logo=opensource&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Made%20with-C-A8B9CC?style=for-the-badge&logo=c&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Compiled%20with-GCC-E0234E?style=for-the-badge&logo=gnu&logoColor=red"/> <br>
+  <img src="https://img.shields.io/badge/Standard-C11-85EA2D?style=for-the-badge&logo=c&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Arquivo-Binário-FF6C37?style=for-the-badge&logo=databricks&logoColor=FF6C37"/>
+  <img src="https://img.shields.io/badge/Status-Concluído-green?style=for-the-badge&logo=checkmarx&logoColor=green"/>
+</p>
