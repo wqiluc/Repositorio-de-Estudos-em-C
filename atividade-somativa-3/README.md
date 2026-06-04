@@ -35,16 +35,16 @@ Sistema de cadastro e gerenciamento de contas bancárias em C, usando **arquivo 
 O código é dividido em três módulos com responsabilidades bem definidas:
 
 <pre>
-atividade-somativa-3/ <img src="https://img.shields.io/badge/C11-111827?style=flat-square&logo=c&logoColor=A8B9CC" height="18"/> <img src="https://img.shields.io/badge/GCC-111827?style=flat-square&logo=gnu&logoColor=white" height="18"/>
+atividade-somativa-3 <img src="https://img.shields.io/badge/C11-111827?style=flat-square&logo=c&logoColor=A8B9CC" height="18"/><img src="https://img.shields.io/badge/GCC-111827?style=flat-square&logo=gnu&logoColor=white" height="18"/>/
 │
-├── main/ <img src="https://img.shields.io/badge/Módulo_Raiz-red?style=flat-square&logo=c&logoColor=white" height="18"/>
+├── main <img src="https://img.shields.io/badge/Módulo_Raiz-red?style=flat-square&logo=c&logoColor=white" height="18"/>/
 │   └── main.c <img src="https://img.shields.io/badge/Entry_Point-1e3a5f?style=flat-square&logo=c&logoColor=white" height="18"/> <img src="https://img.shields.io/badge/Loop_do_Menu-111827?style=flat-square" height="18"/> <img src="https://img.shields.io/badge/FILE*_de_listagem-111827?style=flat-square" height="18"/>
 │
-└── app/ <img src="https://img.shields.io/badge/Módulos_de_Negócio-red?style=flat-square&logo=c&logoColor=white" height="18"/>
-    ├── include/ <img src="https://img.shields.io/badge/Headers-1e4d2b?style=flat-square&logo=c&logoColor=A8B9CC" height="18"/>
+└── app <img src="https://img.shields.io/badge/Módulos_de_Negócio-red?style=flat-square&logo=c&logoColor=white" height="18"/>/
+    ├── include <img src="https://img.shields.io/badge/Headers-1e4d2b?style=flat-square&logo=c&logoColor=A8B9CC" height="18"/>/
     │   ├── conta.h <img src="https://img.shields.io/badge/struct_Cliente-1e4d2b?style=flat-square&logo=c&logoColor=A8B9CC" height="18"/> <img src="https://img.shields.io/badge/Protótipos_CRUD-111827?style=flat-square" height="18"/>
     │   └── arquivo.h <img src="https://img.shields.io/badge/Utilitários_Binários-1e4d2b?style=flat-square&logo=c&logoColor=A8B9CC" height="18"/> <img src="https://img.shields.io/badge/fseek%20|%20fread%20|%20fwrite-111827?style=flat-square" height="18"/>
-    └── src/ <img src="https://img.shields.io/badge/Sources-4a1942?style=flat-square&logo=c&logoColor=A8B9CC" height="18"/>
+    └── src <img src="https://img.shields.io/badge/Sources-4a1942?style=flat-square&logo=c&logoColor=A8B9CC" height="18"/>/
         ├── conta.c <img src="https://img.shields.io/badge/Implementação_CRUD-4a1942?style=flat-square&logo=c&logoColor=A8B9CC" height="18"/> <img src="https://img.shields.io/badge/cadastrar%20|%20consultar%20|%20atualizar%20|%20encerrar%20|%20listar-111827?style=flat-square" height="18"/>
         └── arquivo.c <img src="https://img.shields.io/badge/I/O_Binário-4a1942?style=flat-square&logo=c&logoColor=A8B9CC" height="18"/> <img src="https://img.shields.io/badge/fopen%20|%20fseek%20|%20fread%20|%20fwrite%20|%20ftell-111827?style=flat-square" height="18"/>
 </pre>
@@ -114,6 +114,19 @@ contas.bin (em bytes):
 | `arquivo_total_registros` | `long (FILE *f)` | `fseek(SEEK_END)` + `ftell` ÷ `sizeof` |
 | `arquivo_ler` | `int (FILE*, long pos, Cliente*)` | `fseek` + `fread` na posição `pos` |
 | `arquivo_escrever` | `void (FILE*, long pos, const Cliente*)` | `fseek` + `fwrite` na posição `pos` |
+
+### Modos de `fopen` (file open - modo de abertura de arquivo) utilizados
+
+| Modo | Lê | Escreve | Cria se não existir | Trunca | Posição inicial |
+|------|----|---------|---------------------|--------|-----------------|
+| `"ab"` | ❌ | ✅ (append) | ✅ | ❌ | Final do arquivo |
+| `"rb+"` | ✅ | ✅ | ❌ | ❌ | Início do arquivo |
+
+**`"ab"` — append binário**
+Usado logo no início de `conta_cadastrar` apenas para **garantir que o arquivo existe**. Se `contas.bin` ainda não foi criado, o `fopen("ab")` o cria vazio. Se já existir, não apaga nada nem move dados — apenas abre e fecha. Qualquer escrita feita nesse modo iria para o final do arquivo, mas aqui o `fclose` é chamado imediatamente sem escrever nada; o objetivo é só a criação implícita.
+
+**`"rb+"` — leitura e escrita binária**
+Usado em `conta_cadastrar`, `conta_atualizar_saldo` e `conta_encerrar`. Abre o arquivo existente permitindo **leitura e escrita simultâneas** sem apagar o conteúdo. É o modo correto para atualizar um registro específico via `fseek` + `fwrite`: o ponteiro vai direto à posição desejada e sobrescreve apenas aqueles bytes, mantendo todos os outros intactos. Exige que o arquivo já exista — por isso o `"ab"` é necessário antes.
 
 <h2 align="center">⚙️ Detalhes de Implementação <br>
 <img src="https://img.shields.io/badge/Implementação-111827?style=flat-square&logo=gnubash&logoColor=white"/></h2>
