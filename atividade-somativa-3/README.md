@@ -29,7 +29,7 @@ Sistema de cadastro e gerenciamento de contas bancárias em C, usando **arquivo 
 | 6 | 🔄 Repetir listagem | Usa `rewind()` para reler o arquivo do início |
 | 7 | 🚪 Encerrar programa | Fecha o arquivo e finaliza a execução |
 
-<h2 align="center">🏗️ Arquitetura do Projeto <br>
+<h2 align="center">🏗️ Arquitetura da Atividade <br>
 <img src="https://img.shields.io/badge/Arch-111827?style=flat-square&logo=instructure&logoColor=white"/></h2>
 
 O código é dividido em três módulos com responsabilidades bem definidas:
@@ -55,7 +55,7 @@ atividade-somativa-3 <img src="https://img.shields.io/badge/C11-111827?style=fla
 <p align="center">
   <img src="https://img.shields.io/badge/main.c-→_conta.h-0ea5e9?style=flat-square&logo=c&logoColor=white"/>
   <img src="https://img.shields.io/badge/main.c-→_arquivo.h-0ea5e9?style=flat-square&logo=c&logoColor=white"/>
-  <img src="https://img.shields.io/badge/conta.h-→_arquivo.h-22c55e?style=flat-square&logo=c&logoColor=white"/>
+  <img src="https://img.shields.io/badge/conta.h-→_arquivo.h-f59e0b?style=flat-square&logo=c&logoColor=white"/>
   <img src="https://img.shields.io/badge/arquivo.h-→_conta.h_(struct)-f59e0b?style=flat-square&logo=c&logoColor=white"/>
 </p>
 
@@ -68,7 +68,7 @@ main/main.c
 ```
 
 <h2 align="center">🧱 Estrutura do Registro <br>
-<img src="https://img.shields.io/badge/struct_Cliente-111827?style=flat-square&logo=c&logoColor=A8B9CC"/></h2>
+<img src="https://img.shields.io/badge/struct_Cliente-111827?style=flat-square&logo=c&logoColor=brown"/></h2>
 
 Cada conta ocupa exatamente `sizeof(Cliente)` bytes no arquivo binário — sem padding variável, sem separadores, sem nova linha:
 
@@ -147,7 +147,7 @@ Usado em `conta_cadastrar`, `conta_atualizar_saldo` e `conta_encerrar`. Abre o a
 - A opção 6 chama `rewind(f_lista)` explicitamente antes de reler, demonstrando o uso da função
 
 <h2 align="center">🚀 Como Compilar e Executar <br>
-<img src="https://img.shields.io/badge/GCC_Build-111827?style=flat-square&logo=gnu&logoColor=white"/></h2>
+<img src="https://img.shields.io/badge/GCC_Build-111827?style=flat-square&logo=gnu&logoColor=red"/></h2>
 
 ```bash
 cd atividade-somativa-3
@@ -164,7 +164,7 @@ gcc -std=c11 -Wall -Wextra -o sistema main/main.c app/src/conta.c app/src/arquiv
 > O arquivo `contas.bin` é criado automaticamente na primeira execução, se não existir.
 
 <h2 align="center">🧠 Explicação do <code>main/main.c</code> <br>
-<img src="https://img.shields.io/badge/Entry_Point-111827?style=flat-square&logo=c&logoColor=A8B9CC"/></h2>
+<img src="https://img.shields.io/badge/Entry_Point-111827?style=flat-square&logo=c&logoColor=pink"/></h2>
 
 O `main.c` é o ponto de entrada e o **controlador do loop principal**. Ele não implementa nenhuma lógica de negócio — apenas orquestra as chamadas e gerencia o `FILE *f_lista`.
 
@@ -203,7 +203,7 @@ O arquivo `contas.bin` foi modificado por outra chamada `fopen/fclose` interna. 
 ---
 
 <h2 align="center">💡 Conceitos de C Utilizados <br>
-<img src="https://img.shields.io/badge/Conceitos_C-111827?style=flat-square&logo=c&logoColor=A8B9CC"/></h2>
+<img src="https://img.shields.io/badge/Conceitos_C-111827?style=flat-square&logo=c&logoColor=yellow"/></h2>
 
 | Conceito | Onde é usado |
 |----------|-------------|
@@ -264,7 +264,7 @@ O arquivo `contas.bin` foi modificado por outra chamada `fopen/fclose` interna. 
   <img src="https://img.shields.io/badge/License-MIT-FF8C00?style=for-the-badge&logo=opensource&logoColor=white"/>
   <img src="https://img.shields.io/badge/Made%20with-C-A8B9CC?style=for-the-badge&logo=c&logoColor=white"/>
   <img src="https://img.shields.io/badge/Compiled%20with-GCC-E0234E?style=for-the-badge&logo=gnu&logoColor=red"/> <br>
-  <img src="https://img.shields.io/badge/Standard-C11-85EA2D?style=for-the-badge&logo=c&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Standard-C11-85EA2D?style=for-the-badge&logo=c&logoColor=green"/>
   <img src="https://img.shields.io/badge/Arquivo-Binário-FF6C37?style=for-the-badge&logo=databricks&logoColor=FF6C37"/>
   <img src="https://img.shields.io/badge/Status-Concluído-green?style=for-the-badge&logo=checkmarx&logoColor=green"/>
 </p>
